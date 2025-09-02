@@ -3,22 +3,22 @@ import "./Home.css";
 
 const cardsData = [
   {
-    image: "https://source.unsplash.com/400x300/?coding,programming",
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80",
     title: "Optimisez vos compétences",
     description:
-      "Construisez un profil qui valorise votre savoir-faire technique et vos réalisations professionnelles.",
+      "Créez un profil qui met en avant votre savoir-faire et vos projets uniques.",
   },
   {
-    image: "https://source.unsplash.com/400x300/?job,career",
-    title: "Trouvez votre emploi idéal",
+    image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80",
+    title: "Trouvez l'emploi parfait",
     description:
-      "Découvrez les offres les plus pertinentes et saisissez votre nouvelle opportunité professionnelle.",
+      "Explorez les offres exclusives et décrochez votre prochaine aventure professionnelle.",
   },
   {
-    image: "https://source.unsplash.com/400x300/?developer,talent",
-    title: "Attirez les talents d’exception",
+    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=400&q=80",
+    title: "Connectez avec les recruteurs",
     description:
-      "Identifiez des développeurs compétents parfaitement adaptés à vos exigences.",
+      "Mettez-vous en avant et attirez les meilleurs talents et recruteurs.",
   },
 ];
 
@@ -35,12 +35,14 @@ function Home() {
       </div>
 
       <div className="cards">
-        {cardsData.map(({ image, title, description }, idx) => (
-          <div className="card" key={idx}>
-            <img src={image} alt={title} />
-            <h3>{title}</h3>
-            <p>{description}</p>
-            <button className="btn-secondary">En savoir plus</button>
+        {cardsData.map(({ image, title, description }, i) => (
+          <div className="card" key={i}>
+            <div className="card-image" style={{ backgroundImage: `url(${image})` }} />
+            <div className="card-content">
+              <h3>{title}</h3>
+              <p>{description}</p>
+              <button className="btn-secondary">En savoir plus</button>
+            </div>
           </div>
         ))}
       </div>

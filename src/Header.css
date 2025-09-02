@@ -1,33 +1,33 @@
-/* Reset minimal */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .header {
-  background: linear-gradient(90deg, #0052d4, #4364f7, #6fb1fc);
-  padding: 20px 0;
-  color: white;
+  background: #111; /* Fond noir intense */
+  padding: 1rem 2rem;
+  color: #eee;
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 0 15px rgba(255,255,255,0.1);
 }
 
 .container {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .logo {
-  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
-  letter-spacing: 2px;
+  font-size: 1.8rem;
+  color: #00d8ff; /* bleu cyan vif */
+  letter-spacing: 3px;
 }
 
 .nav-links {
@@ -37,7 +37,7 @@
 }
 
 .nav-links li a {
-  color: white;
+  color: #eee;
   text-decoration: none;
   font-weight: 600;
   font-size: 1rem;
@@ -45,17 +45,19 @@
 }
 
 .nav-links li a:hover {
-  color: #ffd700; /* Gold on hover */
+  color: #00d8ff;
 }
 
 .btn-primary {
-  padding: 8px 18px;
-  background-color: #ffd700;
+  padding: 8px 22px;
+  background: #00d8ff;
   border-radius: 30px;
-  color: #0052d4;
+  color: #111;
   font-weight: 700;
+  transition: background-color 0.3s ease;
 }
 
 .btn-primary:hover {
-  background-color: #ffc300;
+  background: #00b0cc;
+  color: white;
 }
