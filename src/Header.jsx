@@ -4,15 +4,12 @@ import "./Header.css";
 function Header() {
   return (
     <header className="header">
-      <div className="container">
-        <h1 className="logo">DevJob</h1>
+      <div className="header-container">
+        <h1>DevJob</h1>
         <nav>
-          <ul className="nav-links">
-            <li><a href="#jobs">Jobs</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">À propos</a></li>
-            <li><a href="#contact" className="btn-primary">Contact</a></li>
-          </ul>
+          <a href="#home">Accueil</a>
+          <a href="#jobs">Offres</a>
+          <a href="#contact">Contact</a>
         </nav>
       </div>
     </header>
